@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 5000px;
+    /* overflow-x:hidden ; */
+    
+}
+body{
+    overflow-x: hidden;
+}
+.nav{
+    width:100%;
+    height:13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffe2;
+    /* position: fixed; */
+    
+}
+.nav ul{
+    display: flex;
+    gap:30px;
+}
+.nav ul li{
+    list-style: none;
+    color:purple;
+    font-size: 20px;
+}
+.img1{
+    /* border:2px solid black; */
+    padding-left:50px;
+    position: relative;
+    bottom: 100px;
+}
+.img{
+    /* border:2px solid black; */
+   display:inline-block;
+   position:relative;
+   bottom: 450px;
+   left:470px;
+}
+.info{
+    border:2px solid black;
+    width: 400px;
+    height:120px;
+    position: relative;
+    bottom:770px;
+    font-size:16px;
+    
+}
+.content{
+    /* border:2px solid blue; */
+    height:600px;
+     background-color:#dcc7d6;
+     /* overflow:hidden */
+}
+.content2{
+    /* border:2px solid red; */
+    max-height: 800px;
+    background-color: #e7e8e8;
+}
+.img4{
+    display: inline-block;
+    position: relative;
+    right:295px;
+    bottom:69px;
+}
+.logo{
+    /* border:2px solid yellow; */
+    display: inline-block;    
+    position:relative;
+
+    bottom: 200px;
+}
+.inside{
+    /* border:2px solid green; */
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    font-family:'Montserrat';
+}
+.img4{
+    /* border:2px solid purple; */
+    display: inline-block;
+    position: relative;
+    left:500px;
+    top:270px;
+}
+.img3{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    position: relative;
+    top:100px;
+    left:500px;
+
+}
+.piccon{
+    position: relative;
+    bottom: 620px;
+    left:1070px;
+    width:300px;
+    height:200px;
+
+}
+.piccon span{
+    font-family: 'Inter';
+    font-size:14px;
+    color:#841C26;
+    font-weight: 580;
+    font-style: italic;
+}
+.imgdog{
+    display:inline-block;
+    background: transparent;
+    mix-blend-mode: multiply;
+}
