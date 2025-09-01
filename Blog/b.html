@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aawart KC IS DON - Anushka Shrestha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f6f8fe;
+    }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-blue-600">Anushka</div>
+    <ul class="flex gap-6 text-gray-700 font-semibold">
+      <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Aawart Don CTF Blog Page -->
+<section id="blog-post" class="py-20 px-6 md:px-32 bg-[#f6f8fe]">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold text-blue-600 mb-6">Aawart Don CTF</h1>
+    <p class="text-gray-700 text-lg mb-8">
+      In this project, I participated in the **Aawart Don CTF** challenge, a thrilling challenge that tested my knowledge and skills in network security and web exploitation. The challenge had multiple stages, each requiring a different approach to solve.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Challenge Overview</h2>
+    <p class="text-gray-700 mb-6">
+      The Aawart Don CTF was designed to challenge participants on various aspects of web and network security. The task involved identifying vulnerabilities in both the server and the web application, leading to the final capture of the flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Steps Taken</h3>
+    <p class="text-gray-700 mb-6">
+      1. **Initial Reconnaissance**: I started by scanning the target machine to find open ports and services using **Nmap**.<br>
+      2. **Service Enumeration**: After identifying open ports, I explored the web service on port 80 using **Dirbuster** to look for hidden files and directories.<br>
+      3. **Exploiting Web Vulnerability**: Upon finding a vulnerability in the web application, I used **SQL injection** to access the database and retrieve sensitive information.<br>
+      4. **Final Capture**: After exploiting a privilege escalation vulnerability on the server, I successfully accessed the flag and submitted the solution for a point gain.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Challenges Faced</h3>
+    <p class="text-gray-700 mb-6">
+      - The first challenge was identifying a **hidden file directory** on the server that was crucial for discovering the vulnerability.<br>
+      - **SQL injection** was more complex than initially expected, requiring multiple attempts to bypass filtering mechanisms.<br>
+      - The final privilege escalation involved multiple steps of reverse-engineering, making it difficult to navigate.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Solution</h3>
+    <p class="text-gray-700 mb-6">
+      After gathering all the information, I was able to craft a SQL injection payload that bypassed the web application's input validation. This allowed me to access the internal database, which held critical information about the server's file system and users. After escalating my privileges, I gained access to the root directory and successfully captured the flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Key Learnings</h3>
+    <p class="text-gray-700 mb-6">
+      - Gaining expertise in **SQL injection** and bypassing web application filters.<br>
+      - **Privilege escalation** techniques and their importance in gaining full access.<br>
+      - Using tools like **Nmap**, **Dirbuster**, and **Burp Suite** effectively in real-world environments.<br>
+      - The importance of careful and systematic **reconnaissance** and **exploitation** in CTF challenges.
+    </p>
+
+    <!-- Back to Projects Link -->
+    <a href="/index.html#projects" class="text-blue-600 underline">Back to Portfolio</a>
+  </div>
+</section>
+
+</body>
+</html>

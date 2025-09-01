@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hacker CTF - Anushka Shrestha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f6f8fe;
+    }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-blue-600">Anushka</div>
+    <ul class="flex gap-6 text-gray-700 font-semibold">
+      <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hacker CTF Blog Page -->
+<section id="blog-post" class="py-20 px-6 md:px-32 bg-[#f6f8fe]">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold text-blue-600 mb-6">Hacker CTF</h1>
+    <p class="text-gray-700 text-lg mb-8">
+      In this project, I participated in the **Hacker CTF**, which focused on real-world scenarios related to web security, network attacks, and system exploitation. The challenge involved multiple phases, each requiring a unique approach and various tools to complete.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Challenge Overview</h2>
+    <p class="text-gray-700 mb-6">
+      The **Hacker CTF** challenge provided a series of web and network security problems that needed to be exploited. Each phase required using tools like **Burp Suite**, **Nmap**, and **Metasploit**, alongside custom scripting, to discover vulnerabilities, escalate privileges, and ultimately capture the flags.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Steps Taken</h3>
+    <p class="text-gray-700 mb-6">
+      1. **Reconnaissance**: I began by scanning the machine using **Nmap** to find open ports and services. This helped me identify the vulnerable web application running on port 80.<br>
+      2. **Web Exploitation**: I used **Burp Suite** to identify and exploit SQL injection vulnerabilities in the web application, which allowed me to extract sensitive database information.<br>
+      3. **Privilege Escalation**: After gaining initial access, I attempted privilege escalation on the system using **Metasploit** and found an unpatched vulnerability in the kernel, which gave me root access.<br>
+      4. **Flag Capture**: I successfully captured the flag after exploiting the system, following the correct sequence of operations and finding hidden files with the flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Challenges Faced</h3>
+    <p class="text-gray-700 mb-6">
+      - **Reconnaissance** was more difficult than expected due to the host being protected by basic security measures, including an aggressive firewall.<br>
+      - **Web vulnerabilities** were well-hidden behind obfuscation, requiring a lot of trial and error to bypass the application security.<br>
+      - **Privilege escalation** was another challenge, as the system required multiple stages of exploitation, which required careful research.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Solution</h3>
+    <p class="text-gray-700 mb-6">
+      After identifying a **SQL injection** vulnerability, I was able to dump the database and find usernames and passwords. I leveraged these credentials to escalate privileges. The final step involved exploiting an unpatched kernel vulnerability, allowing me to access the root system and capture the flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Key Learnings</h3>
+    <p class="text-gray-700 mb-6">
+      - The importance of **reconnaissance** and gathering detailed information before making any attacks.<br>
+      - Using **Burp Suite** for identifying and exploiting web vulnerabilities, especially **SQL injection**.<br>
+      - Privilege escalation techniques, including exploiting **kernel vulnerabilities** and other misconfigurations.<br>
+      - How **systematic exploitation** and **cautious trial and error** can lead to success in a real-world scenario.
+    </p>
+
+    <!-- Back to Projects Link -->
+    <a href="/index.html#projects" class="text-blue-600 underline">Back to Portfolio</a>
+  </div>
+</section>
+
+</body>
+</html>

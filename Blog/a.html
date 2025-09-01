@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elijah's CTF - Anushka Shrestha</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f6f8fe;
+    }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-blue-600">Anushka</div>
+    <ul class="flex gap-6 text-gray-700 font-semibold">
+      <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Elijah's CTF Blog Page -->
+<section id="blog-post" class="py-20 px-6 md:px-32 bg-[#f6f8fe]">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold text-blue-600 mb-6">Elijah's CTF</h1>
+    <p class="text-gray-700 text-lg mb-8">
+      In this project, I reverse-engineered a Golang binary, which was a part of the Elijah's CTF challenge. The challenge offered 300 points for a successful exploit.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mb-4">Challenge Overview</h2>
+    <p class="text-gray-700 mb-6">
+      The task involved reverse-engineering a Golang binary, which was intentionally obfuscated to prevent easy analysis. The goal was to find vulnerabilities in the code that would allow us to extract a hidden flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Steps Taken</h3>
+    <p class="text-gray-700 mb-6">
+      1. **Initial Analysis**: I began by running the binary and observing its behavior. I noticed a series of cryptographic functions that seemed out of place.<br>
+      2. **Disassembly**: Using tools like Ghidra, I disassembled the binary and examined the instructions to identify potential weaknesses.<br>
+      3. **Debugging**: I used a debugger to step through the code, which revealed a vulnerability in the random number generation mechanism, leading to the extraction of the flag.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Challenges Faced</h3>
+    <p class="text-gray-700 mb-6">
+      One of the major challenges was understanding the custom obfuscation techniques used in the Golang binary. The code was intentionally convoluted, requiring advanced reverse-engineering techniques to untangle it.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Solution</h3>
+    <p class="text-gray-700 mb-6">
+      By carefully analyzing the disassembled code, I identified a critical bug in the random number generation. Exploiting this vulnerability allowed me to predict the key used to generate the flag, which led to a successful capture.
+    </p>
+
+    <h3 class="text-xl font-semibold text-blue-600 mb-4">Key Learnings</h3>
+    <p class="text-gray-700 mb-6">
+      - Understanding Golang's memory management was crucial for disassembling the binary.<br>
+      - Reverse-engineering obfuscated code requires patience and careful attention to detail.<br>
+      - Debugging and stepping through the code is often the key to discovering hidden flaws.
+    </p>
+
+    <!-- Back to Projects Link -->
+    <a href="/index.html#projects" class="text-blue-600 underline">Back to Portfolio</a>
+  </div>
+</section>
+
+</body>
+</html>
